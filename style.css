@@ -1,0 +1,337 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+/* THIS LINE LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/* Start your base/mobile styles here */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+h1{
+	font-size:40px;
+	font-family: 'Roberto Mono', monospace;
+	text-align: center;
+  	color: #2250B2;
+  	line-height: 40px;
+  	margin-left: 5px;
+  	margin-right: 5px;
+}
+
+h2{
+	font-size:24px;
+	font-family: 'Roberto Mono', monospace;
+	color: #2250B2;
+	margin-left: 5px;
+  	margin-right: 5px;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Roberto Mono', monospace;
+  margin-left: 8px;
+  margin-right: 8px;
+  opacity:.8;
+}
+
+.instructions{
+	font-size:19px;
+	opacity:.9;
+	text-align:center;
+	color:#2F7AB2;
+}
+
+.imagecredit{
+	font-size:10px;
+	font-style:italic;
+	font-family: 'Roberto Mono', monospace;
+	opacity:.8;
+
+}
+
+.byline {
+  font-family: 'Roberto Mono', monospace;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 16px;
+  border-bottom: 1px solid #000000
+}
+
+.hotimage{
+	width:100%;
+	margin-left:8px;
+	margin-right:8px;
+}
+
+.image_container{
+	position: relative;
+	width: 100%;
+}
+
+.hotspot{
+	position: absolute;
+	height:20px;
+	width:20px;
+	text-align:center;
+	padding: 10px;
+	color #666;
+	background: #ccc;
+	opacity: .6;
+	font-family: sans-serif;
+	font-weight: bold;
+	outline: none;
+	border: 2px solid #fff;
+	border-radius: 100px;
+	cursor:pointer;
+}
+
+#spot1 {
+	top:50%;
+	left:50%;
+}
+
+#study1{
+	top:85%;
+	left:80%;
+	width:60px;
+	height:30px;
+	font-size:14px;
+}
+
+#spot2 {
+	top:50%;
+	left:25%;
+}
+
+#study2{
+	top:85%;
+	left:80%;
+	width:60px;
+	height:30px;
+	font-size:14px;
+}
+
+#spot3 {
+	top:24%;
+	left:79%;
+}
+
+#study3{
+	top:85%;
+	left:80%;
+	width:60px;
+	height:30px;
+	font-size:14px;
+}
+
+#spot4 {
+	top:55%;
+	left:35%;
+}
+
+#study4{
+	top:85%;
+	left:80%;
+	width:60px;
+	height:30px;
+	font-size:14px;
+}
+
+.button_close {
+  position: absolute;
+  font-family: sans-serif;
+  top: 5%;
+  left: 92%;
+  font-size: 40px;
+  color: white;
+  z-index: 4;
+  font-weight: 900;
+
+}
+
+.info_slides {
+  position: absolute;
+  background: green;
+  opacity: 0.7;
+  z-index:6;
+  display:none;
+  height:100%;
+  width:100%;
+}
+
+.info_slides_show {
+  display: block;
+}
+
+.hide_button {
+  display: none;
+}
+
+.button_close_show {
+  display: block;
+}
+
+.popIn_text{
+	font-size:20px;
+	font-family: 'Roberto Mono', monospace;
+	color: white;
+	margin-left: 5px;
+  	margin-right: 5px;
+  	text-align:center;
+  	margin-top:40px;
+}
+
+#popIn a{
+	font-size:20px;
+	font-family: 'Roberto Mono', monospace;
+	color: white;
+  	text-align:center;
+
+}
+
+#popIn2 a{
+	font-size:20px;
+	font-family: 'Roberto Mono', monospace;
+	color: white;
+  	text-align:center;
+
+}
+
+#popIn3 a{
+	font-size:20px;
+	font-family: 'Roberto Mono', monospace;
+	color: white;
+  	text-align:center;
+
+}
+
+#popIn4 a{
+	font-size:20px;
+	font-family: 'Roberto Mono', monospace;
+	color: white;
+  	text-align:center;
+  }
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+   #maincontent{
+   	max-width:600px;
+   	margin-left:auto;
+   	margin-right:auto;
+   }
+
+ h1{
+ 	font-size:70px;
+ 	line-height:70px;
+ }
+
+ .byline{
+ 	font-size:28px;
+ }
+
+ p{
+ 	font-size:28px;
+ }
+
+ h2{
+ 	font-size:50px
+ }
+
+.imagecredit{
+	font-size:20px;
+}
+
+.hotspot{
+	height:50px;
+	width:50px;
+}
+
+.button_close {
+font-size:50px;
+}
+.popIn_text{
+	font-size:30px;
+}
+
+#popIn a{
+	font-size:30px;
+}
+
+#popIn2 a{
+	font-size:30px;
+}
+
+   #popIn3 a{
+	font-size:30px;
+}
+ 	#popIn4 a{
+	font-size:30px;
+}
+
+#study1{
+	width:90px;
+	height:45px;
+	font-size:24px;
+
+}
+
+#study2{
+	width:90px;
+	height:45px;
+	font-size:24px;
+
+}
+
+#study3{
+	width:90px;
+	height:45px;
+	font-size:24px;
+	}
+
+#study4{
+	width:90px;
+	height:45px;
+	font-size:24px;
+}
+
+.popIn_text{
+	margin-top:100px;
+	}
+
+#spot3 {
+	top:24%;
+	left:75%;
+}
+
+.instructions{
+font-size:35px;
+}
+}
+
+
+
+
+@media(min-width: 729px) {
+    #maincontent{
+    	max-width: 700px;
+    }
+   #spot3 {
+	top:24%;
+	left:79%;
+}
+}
