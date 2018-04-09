@@ -84,12 +84,12 @@ p {
 
 .hotspot{
 	position: absolute;
-	height:20px;
-	width:20px;
+	height:40px;
+	width:40px;
 	text-align:center;
 	padding: 10px;
-	color #666;
-	background: #ccc;
+	color: white;
+	background: red;
 	opacity: .6;
 	font-family: sans-serif;
 	font-weight: bold;
@@ -154,7 +154,7 @@ p {
 .button_close {
   position: absolute;
   font-family: sans-serif;
-  top: 5%;
+  top: 3%;
   left: 92%;
   font-size: 40px;
   color: white;
@@ -165,7 +165,7 @@ p {
 
 .info_slides {
   position: absolute;
-  background: green;
+  background: red;
   opacity: 0.7;
   z-index:6;
   display:none;
@@ -186,17 +186,17 @@ p {
 }
 
 .popIn_text{
-	font-size:20px;
+	font-size:16px;
 	font-family: 'Roberto Mono', monospace;
 	color: white;
 	margin-left: 5px;
   	margin-right: 5px;
   	text-align:center;
-  	margin-top:40px;
+  	margin-top:48px;
 }
 
 #popIn a{
-	font-size:20px;
+	font-size:16px;
 	font-family: 'Roberto Mono', monospace;
 	color: white;
   	text-align:center;
@@ -204,7 +204,7 @@ p {
 }
 
 #popIn2 a{
-	font-size:20px;
+	font-size:16px;
 	font-family: 'Roberto Mono', monospace;
 	color: white;
   	text-align:center;
@@ -212,7 +212,7 @@ p {
 }
 
 #popIn3 a{
-	font-size:20px;
+	font-size:16px;
 	font-family: 'Roberto Mono', monospace;
 	color: white;
   	text-align:center;
@@ -220,7 +220,7 @@ p {
 }
 
 #popIn4 a{
-	font-size:20px;
+	font-size:16px;
 	font-family: 'Roberto Mono', monospace;
 	color: white;
   	text-align:center;
@@ -265,22 +265,22 @@ p {
 font-size:50px;
 }
 .popIn_text{
-	font-size:30px;
+	font-size:24px;
 }
 
 #popIn a{
-	font-size:30px;
+	font-size:24px;
 }
 
 #popIn2 a{
-	font-size:30px;
+	font-size:24px;
 }
 
    #popIn3 a{
-	font-size:30px;
+	font-size:24px;
 }
  	#popIn4 a{
-	font-size:30px;
+	font-size:24px;
 }
 
 #study1{
